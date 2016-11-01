@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stephane Moreau</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Js -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/min/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+
+    <script src="js/main.js"></script>
+    <script>    
+      $(document).ready(function() {
+          var content = $('.content');
+          var clicked = false;
+          
+          document.getElementById("trigger").addEventListener("click", function(event){
+              event.preventDefault()
+          });
+        
+          $('#trigger').on('click', function() {
+              if (clicked === false){
+                $(this).text('Hide Follow!');
+                content.removeClass('reverse').addClass('running');
+                $('#layerSocialControl, #layerSocialControl1, #layerSocialControl2, #layerSocialControl3').removeClass('hidden');
+                clicked = true;
+              }else{
+                $(this).text('Follow Me!');
+                content.removeClass('running').addClass('reverse');
+                $('#layerSocialControl, #layerSocialControl1, #layerSocialControl2, #layerSocialControl3').addClass('hidden');
+                clicked = false;
+              }
+          });
+      });
+
+        $(document).ready(function() {
+          var offset = 220;
+          var duration = 500;
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > offset) {
+              $('.crunchify-top').fadeIn(duration);
+            } else {
+              $('.crunchify-top').fadeOut(duration);
+            }
+          });
+       
+          $('.crunchify-top').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, duration);
+            return false;
+          })
+        });
+    </script>
+
+  </head>
+  <body>
+
+
+
+    <!-- Header Start -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- header Nav Start -->
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <img style="width: 175px;" src="img/rsz_my-logo.png" alt="Logo">
+                </a>
+              </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header><!-- header close -->
+        
+    <!-- Slider Start -->
+    <section id="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h1 class="animated fadeInUp" style="text-align: center;">Thinking about design is hard, but not thinking about it can be disastrous!</h1>
+              <p class="animated fadeInUp" style="text-align: center;">My name is Stephane Moreau - Passionate Front-End Developer always ready to face new challenges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Wrapper Start -->
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <div class="block">
+              <div class="section-title">
+                <h2>About Me</h2>
+                <p>Coding for me is not just part of work, not even a hobby. It's my way of living.</p>
+              </div>
+              <p>My first contact with programming took place back when I was an 11th grade student. The ability to use a computer to create something from scratch charmed me from the first time I set my fingers on a keyboard in a computer lab and I quickly started to learn some programming languages in my free time, borrowing books from the school library and searching online for resources that could help me apply that knowledge.</p>
+            </div>
+          </div><!-- .col-md-7 close -->
+          <div class="col-md-5 col-sm-12">
+            <div class="block">
+              <img src="img/ezgif.com-optimize.gif" alt="Img">
+            </div>
+          </div><!-- .col-md-5 close -->
+        </div>
+      </div>
+    </section>
+
+  <section id="feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6">
+          <h2>Work Experience</h2>
+          <p>Associate Front-End Developer - <a target="_blank" href="https://www.nexmo.com/">Nexmo</a> (Mar 2016 - present)</p>
+          <p>Full-Stack Developer / Volunteer Position - <a target="_blank" href="http://actingworks.co.uk/">Actingworks</a> (Feb - Jul 2016)</p>
+          <p>Full-Stack Developer / Freelancer (<a target="_blank" href="http://inbliss.gr/">Inbliss</a>, <a target="_blank" href="http://shadingblue.com/">Shadingblue</a>, <a target="_blank" href="http://www.bubblesandavocados.gr/">Bubbles & Avocados</a>, etc.) (Sept 2011 - Mar 2016)</p>
+          <p>Web Developer - <a target="_blank" href="http://www.homegreekhome.com/">HomeGreekHome</a> (Sept 2013 - Jan 2016)</p>
+          <p>Front-End Developer - <a target="_blank" href="https://themeforest.net/item/reload-responsive-multipurpose-theme/7302909?s_rank=3">Greatives</a> (Aug 2012 - Apr 2014)</p>
+          <a href="work.html" class="btn btn-view-works">View Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+    <!-- Service Start -->
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>My Specialties</h2>
+            <p>Specialists can never practice their specialties too much. The danger is not practicing enough.</p>
+            <p>Make that mistake, and soon you may not be in the specialty business anymore.</p>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="icon ion-social-html5-outline"></i>
+              <h4><HEAD>HTML5/CSS3</HEAD></h4>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-social-javascript"></i>
+              <h4>Javascript</h4>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-social-angular-outline"></i>
+              <h4>React.js - Angular.js</h4>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-bug"></i>
+              <h4>Wordpress - PHP</h4>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call to action Start -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h2>I 'd love to hear from you!</h2>
+              <a class="btn btn-default btn-call-to-action" href="contact.html" >Contact me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content Start -->
+    <section id="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h2>Fun Facts during my carreer</h2>
+            <p>The first computer “bug” was named after a real bug.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="block">
+              <ul class="counter-box clearfix">
+                <li>
+                  <div class="block">
+                    <i class="ion-coffee"></i>
+                    <h4 class="counter">3650</h4>
+                    <span>Cups Of Coffee</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="block">
+                    <i class="ion-ios-glasses-outline"></i>
+                    <h4 class="counter">14600</h4>
+                    <span>Hours of coding</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="block">
+                    <i class="ion-ios-timer-outline"></i>
+                    <h4 class="counter">10950</h4>
+                    <span>Hours of sleep</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="block">
+                    <i class="ion-ios-infinite-outline"></i>
+                    <h4 class="counter">5876568705</h4>
+                    <span>Bugs fixed</span>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 hidden-sm hidden-xs">
+            <!-- Follow me -->
+            <div class="content">
+              <div class="ID-Image">
+              <img src="img/stefanos200x200.jpg" style="width: 200px; height: 200px; border-radius: 100px;">
+                <ul id="follow">
+                  <li class="line1">
+                    <span id="layerBall" class="ball">LINKED IN</span><span id="layerPulse" class="pulse"></span>
+                    </li>
+                    
+                  
+                    <li class="line2">
+                    <span id="layerBall1" class="ball1">FOORST</span><span id="layerPulse1" class="pulse1"></span>
+                    </li>
+                  
+                    <li class="line3">
+                    <span id="layerBall2" class="ball2">TWITTER</span><span id="layerPulse2" class="pulse2"></span>
+                    </li>
+                  
+                    <li class="line4">
+                    <span id="layerBall3" class="ball3">FACEBOOK</span><span id="layerPulse3" class="pulse3"></span>
+                    </li>
+                </ul>
+                
+                <ul id="social">
+                  <li id="layerSocialControl3" class="facebook btn btn-default hidden"><a target="_blank" href="https://www.facebook.com/stefanos.moreau">Facebook</a></li>
+                  <li id="layerSocialControl2" class="twitter btn btn-default hidden"><a target="_blank" href="https://twitter.com/st_moreau">Twitter</a></li>
+                  <li id="layerSocialControl" class="linked btn btn-default hidden"><a target="_blank" href="https://uk.linkedin.com/in/stefmoreau
+">Linked In</a></li>
+                  <li id="layerSocialControl1" class="forrst btn btn-default hidden"><a target="_blank" href="https://www.instagram.com/st.moreau">Instagram</a></li>
+                </ul>
+
+              </div>
+                
+              <a class="btn btn-default" id="trigger" href="#">Follow Me!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+<a href="#" class="crunchify-top">↑</a>
+
+    
+    <!-- footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy; Stephane Moreau</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+            
+            
+  
+            
+    
+    </bod</html>
